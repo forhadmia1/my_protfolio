@@ -9,6 +9,7 @@ import About from './pages/About/About';
 import Projects from './pages/Home/Projects';
 import Skill from './pages/Skill/Skill';
 import Blogs from './pages/Blogs/Blogs';
+import ContactPage from './pages/Contact/ContactPage';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path='/projects' element={<Projects />} />
         <Route path='/skill' element={<Skill />} />
         <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/contact' element={<ContactPage />} />
       </Routes>
       <ToastContainer />
     </div>
