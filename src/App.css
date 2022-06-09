@@ -1,38 +1,272 @@
-.App {
-  text-align: center;
+.banner-title{
+  position: relative;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.banner-title::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left:72px;
+  animation: typing 20s ease 1s infinite;
+  animation-play-state: running;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes typing {
+  
+  0%{
+      content: '|';
+      color: tomato;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  1.5%{
+      content: 'F|';
+      color: tomato;
   }
-  to {
-    transform: rotate(360deg);
+  3%{
+      content: 'Fr|';
+      color: tomato;
   }
+  4.5%{
+      content: 'Fro|';
+      color: tomato;
+  }
+  6%{
+      content: 'Front|';
+      color: tomato;
+  }
+  7.5%{
+      content: 'Front-|';
+      color: tomato;
+  }
+  9%{
+      content: 'Front-e|';
+      color: tomato;
+  }
+  10.5%{
+      content: 'Front-en|';
+      color: tomato;
+  }
+  12%{
+      content: 'Front-end |';
+      color: tomato;
+  }
+  13.5%{
+      content: 'Front-end D|';
+      color: tomato;
+  }
+  15%{
+      content: 'Front-end De|';
+      color: tomato;
+  }
+  16.5%{
+      content: 'Front-end Dev|';
+      color: tomato;
+  }
+  18%{
+      content: 'Front-end Deve|';
+      color: tomato;
+  }
+  19.5%{
+      content: 'Front-end Devel|';
+      color: tomato;
+  }
+  21%{
+      content: 'Front-end Develo|';
+      color: tomato;
+  }
+  22.5%{
+      content: 'Front-end Develop|';
+      color: tomato;
+  }
+  24%{
+      content: 'Front-end Develope|';
+      color: tomato;
+  }
+  26%{
+      content: 'Front-end Developer|';
+      color: tomato;
+  }
+  28%{
+      content: 'Front-end Developer|';
+      color: tomato;
+  }
+  29.5%{
+      content: 'Front-end Develope|';
+      color: tomato;
+  }
+  31%{
+      content: 'Front-end Develop|';
+      color: tomato;
+  }
+  32.5%{
+      content: 'Front-end Develo|';
+      color: tomato;
+  }
+  34%{
+      content: 'Front-end Devel|';
+      color: tomato;
+  }
+  35.5%{
+      content: 'Front-end Deve|';
+      color: tomato;
+  }
+  37%{
+      content: 'Front-end Dev|';
+      color: tomato;
+  }
+  38.5%{
+      content: 'Front-end De|';
+      color: tomato;
+  }
+  40%{
+      content: 'Front-end D|';
+      color: tomato;
+  }
+  41.5%{
+      content: 'Front-end |';
+      color: tomato;
+  }
+  43%{
+      content: 'Front-end|';
+      color: tomato;
+  }
+  44.5%{
+      content: 'Front-en|';
+      color: tomato;
+  }
+  46%{
+      content: 'Front-e|';
+      color: tomato;
+  }
+  47.5%{
+      content: 'Front-|';
+      color: tomato;
+  }
+  49%{
+      content: 'Front|';
+      color: tomato;
+  }
+  50.5%{
+      content: 'Fron|';
+      color: tomato;
+  }
+  52%{
+      content: 'Fro|';
+      color: tomato;
+  }
+  53.5%{
+      content: 'Fr|';
+      color: tomato;
+  }
+  55%{
+      content: 'F|';
+      color: tomato;
+  }
+  56.5%{
+      content: '|';
+      color: tomato;
+  }
+  58%{
+      content: '|';
+      color: tomato;
+  }
+  59.5%{
+      content: 'W|';
+      color:royalblue;
+  }
+  61%{
+      content: 'We|';
+      color:royalblue;
+  }
+  62.5%{
+      content: 'Web|';
+      color:royalblue;
+  }
+  64%{
+      content: 'Web |';
+      color:royalblue;
+  }
+  65.5%{
+      content: 'Web D|';
+      color:royalblue;
+  }
+  67%{
+      content: 'Web De|';
+      color:royalblue;
+  }
+  68.5%{
+      content: 'Web Dev|';
+      color:royalblue;
+  }
+  70%{
+      content: 'Web Devl|';
+      color:royalblue;
+  }
+  71.5%{
+      content: 'Web Devlo|';
+      color:royalblue;
+  }
+  73%{
+      content: 'Web Devlop|';
+      color:royalblue;
+  }
+  74.5%{
+      content: 'Web Devlope|';
+      color:royalblue;
+  }
+  76%{
+      content: 'Web Devloper|';
+      color:royalblue;
+  }
+  77.5%{
+      content: 'Web Devlope|';
+      color:royalblue;
+  }
+  79%{
+      content: 'Web Devlop|';
+      color:royalblue;
+  }
+  80.5%{
+      content: 'Web Devlo|';
+      color:royalblue;
+  }
+  82%{
+      content: 'Web Devl|';
+      color:royalblue;
+  }
+  83.5%{
+      content: 'Web Dev|';
+      color:royalblue;
+  }
+  85%{
+      content: 'Web De|';
+      color:royalblue;
+  }
+  86.5%{
+      content: 'Web D|';
+      color:royalblue;
+  }
+  88%{
+      content: 'Web |';
+      color:royalblue;
+  }
+  89.5%{
+      content: 'Web|';
+      color:royalblue;
+  }
+  91%{
+      content: 'We|';
+      color:royalblue;
+  }
+  92.5%{
+      content: 'W|';
+      color:royalblue;
+  }
+  94%{
+      content: '|';
+      color:royalblue;
+  }
+  100%{
+    content: '|';
+    color:royalblue;
+  }
+  
 }
+
