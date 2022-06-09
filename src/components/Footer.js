@@ -1,15 +1,17 @@
 import React from 'react';
 import { FaGithubSquare } from 'react-icons/fa';
 import { AiFillLinkedin, AiFillFacebook } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
             <div class="grid grid-flow-col gap-4 text-white">
-                <a class="link link-hover">About us</a>
-                <a class="link link-hover">Contact</a>
-                <a class="link link-hover">Projects</a>
-                <a class="link link-hover">Skill</a>
+                <Link to='/' class="link link-hover">Home</Link>
+                <Link to='/blogs' class="link link-hover">Blog</Link>
+                <Link to='/about' class="link link-hover">About</Link>
+                <Link to='/projects' class="link link-hover">Project</Link>
+                <Link to='/contact' class="link link-hover">Contact</Link>
             </div>
             <div>
                 <div class="grid grid-flow-col gap-5 text-4xl">
