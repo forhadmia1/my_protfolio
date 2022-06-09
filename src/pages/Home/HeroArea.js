@@ -18,7 +18,9 @@ const HeroArea = () => {
                 <div className='bg-slate-800 py-16 md:px-20 px-4'>
                     <h2 className='text-4xl font-bold mb-4 text-white'>Forhad Mia</h2>
                     <h3 className='mb-4 text-2xl'>I am a web devloper</h3>
-                    <p className='mb-4'>Fusce tempor magna mi, non egestas velit ultricies nec. Aenean convallis, risus non condimentum gravida, odio mauris ullamcorper felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna, a placerat sapien pretium eu.</p>
+                    <p className='mb-4'>
+                        I am very passionate about working with programming and related tasks. I am very curious to explore new technologies. I am hardworking and a reliable person.
+                    </p>
                     <button class="btn btn-outline btn-secondary px-12 rounded-3xl border-2  " onClick={saveFile}>Download Resume</button>
                 </div>
             </div>

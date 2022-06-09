@@ -19,7 +19,7 @@ const Footer = () => {
                 </div>
             </div>
             <div>
-                <p className='text-lg'>Copyright © 2022 - All right reserved by developer Forhad</p>
+                <p className='text-lg'>Copyright &copy; 2022 | Forhad Mia</p>
             </div>
         </footer>
     );
