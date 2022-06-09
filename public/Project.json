@@ -1,0 +1,49 @@
+
+[
+    {
+        "id":1,
+        "name":"BD Computers LTD",
+        "image":"https://i.ibb.co/n0GHKKz/Screenshot-4.jpg",
+        "description":[
+           "Fully authenticated by google authentication.",
+            "Integrated payment method.",
+            "The website is fully responsive for mobile and desktop.",
+            "There is a dashboard that gives access to different routes between"
+        ],
+        "technology":"react.js, javascript, boodstrap",
+        "live_link":"https://bd-computers-ltd.web.app/",
+        "client_code":"https://github.com/forhadmia1/Bd_computers_Ltd_client_side",
+        "server_code":"https://github.com/forhadmia1/Bd_computers_Ltd_server_side"
+    },
+    {
+        "id":2,
+        "name":"Laptop Stockroom",
+        "image":"https://i.ibb.co/Hqj1SLw/Screenshot-3.jpg",
+        "description":[
+           "Fully authenticated by google authentication.",
+            "Integrated payment method.",
+            "The website is fully responsive for mobile and desktop.",
+            "There is a dashboard that gives access to different routes between"
+        ],
+        "technology":"react.js, javascript, boodstrap",
+        "live_link":"https://bd-computers-ltd.web.app/",
+        "client_code":"https://github.com/forhadmia1/Bd_computers_Ltd_client_side",
+        "server_code":"https://github.com/forhadmia1/Bd_computers_Ltd_server_side"
+    },
+    {
+        "id":3,
+        "name":"Just Justice",
+        "image":"https://i.ibb.co/gmYQBjq/Screenshot-5.jpg",
+        "description":[
+           "Fully authenticated by google authentication.",
+            "Integrated payment method.",
+            "The website is fully responsive for mobile and desktop.",
+            "There is a dashboard that gives access to different routes between"
+        ],
+        "technology":"react.js, javascript, boodstrap",
+        "live_link":"https://bd-computers-ltd.web.app/",
+        "client_code":"https://github.com/forhadmia1/Bd_computers_Ltd_client_side",
+        "server_code":"https://github.com/forhadmia1/Bd_computers_Ltd_server_side"
+    }
+
+]
