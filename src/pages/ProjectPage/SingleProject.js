@@ -26,15 +26,27 @@ const SingleProject = () => {
                     <div class="flex flex-wrap items-center">
                         <div class="grow-0 shrink-0 basis-auto block lg:flex w-full lg:w-6/12 xl:w-4/12">
                             <div className='flex justify-center items-center w-full gap-5'>
-                                <div class="h-[450px] w-10/12 carousel carousel-vertical rounded-box">
-                                    <div class="carousel-item h-full">
-                                        <img src={project?.image[0]} alt='' />
+                                <div class="carousel w-full h-full">
+                                    <div id="slide1" class="carousel-item relative w-full">
+                                        <img src={project?.image[0]} class="w-full h-full" alt='' />
+                                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                            <a href="#slide4" class="btn btn-circle">❮</a>
+                                            <a href="#slide2" class="btn btn-circle">❯</a>
+                                        </div>
                                     </div>
-                                    <div class="carousel-item h-full">
-                                        <img src={project?.image[1]} alt='' />
+                                    <div id="slide2" class="carousel-item relative w-full">
+                                        <img src={project?.image[1]} class="w-full h-full" alt='' />
+                                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                            <a href="#slide1" class="btn btn-circle">❮</a>
+                                            <a href="#slide3" class="btn btn-circle">❯</a>
+                                        </div>
                                     </div>
-                                    <div class="carousel-item h-full">
-                                        <img src={project?.image[2]} alt='' />
+                                    <div id="slide3" class="carousel-item relative w-full">
+                                        <img src={project?.image[2]} class="w-full h-full" alt='' />
+                                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                            <a href="#slide2" class="btn btn-circle">❮</a>
+                                            <a href="#slide4" class="btn btn-circle">❯</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
