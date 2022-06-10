@@ -9,6 +9,7 @@ import ContactPage from './pages/Contact/ContactPage';
 import AboutMe from './pages/About/AboutMe';
 import ProjectPage from './pages/ProjectPage/ProjectPage';
 import SingleProject from './pages/ProjectPage/SingleProject';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/project/:id' element={<SingleProject />} />
         <Route path='/about' element={<AboutMe />} />
         <Route path='/contact' element={<ContactPage />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
       <ToastContainer />
     </div>

@@ -8,7 +8,7 @@ const ProjectCard = ({ project }) => {
     return (
         <div class="card w-full bg-base-100 shadow-2xl">
             <div className='p-4'>
-                <figure><img className='rounded-lg' src={project?.image[0]} alt={project?.name} /></figure>
+                <figure><img className='rounded-lg hover:scale-110 duration-300' src={project?.image[0]} alt={project?.name} /></figure>
             </div>
             <div className='px-4 pb-4'>
                 <h2 class="card-title">{project?.name}</h2>
