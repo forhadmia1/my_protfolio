@@ -20,7 +20,7 @@ const SingleProject = () => {
         return <p>Loading......</p>
     }
     return (
-        <div class="container my-24 px-6 mx-auto">
+        <div class="container my-20 px-6 mx-auto">
             <section class="mb-32 text-gray-800 text-center md:text-left">
                 <div class="block rounded-lg shadow-lg bg-white">
                     <div class="flex flex-wrap items-center">
@@ -42,7 +42,7 @@ const SingleProject = () => {
                         <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-8/12">
                             <div class="px-6 py-12 md:px-12">
                                 <h2 class="text-3xl font-bold mb-6 pb-2">{project?.name}</h2>
-                                <ul class="text-gray-600 mb-6 pb-2">
+                                <ul class="text-gray-600 mb-6 pb-2 text-left">
                                     {
                                         project?.description.map(list => <li className='list-disc list-inside text-xl'>{list}</li>)
                                     }

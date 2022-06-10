@@ -2,12 +2,14 @@ import React from 'react';
 import { saveAs } from "file-saver";
 import heroImg from '../../Assets/Image/IMG20190904153853-01.png'
 import '../../App.css';
+import { useNavigate } from 'react-router-dom';
 
 const HeroArea = () => {
+    const navigate = useNavigate()
     const saveFile = () => {
         saveAs(
-            "https://drive.google.com/file/d/15ka36LpmP1yD4NX7_7Iw7iydKCtjP3fa/view",
-            "resume_of_Md_Forhad_Mia.pdf"
+            "https://drive.google.com/u/0/uc?id=15ka36LpmP1yD4NX7_7Iw7iydKCtjP3fa&export=download",
+            "Resume_of_Md_Forhad_Mia.pdf"
         );
     };
     return (
@@ -22,7 +24,8 @@ const HeroArea = () => {
                     </p>
                     <div className='flex gap-5'>
                         <button class="btn bg-primary border-none hover:bg-dark text-black hover:text-white rounded-none px-4 border-2 font-semibold" onClick={saveFile}>Download Resume</button>
-                        <button class="btn bg-dark hover:bg-primary border-none text-white hover:text-black rounded-none px-10 border-2 font-semibold">About Me</button>
+
+                        <button onClick={() => navigate('/about')} class="btn bg-dark hover:bg-primary border-none text-white hover:text-black rounded-none px-10 border-2 font-semibold">About Me</button>
                     </div>
                 </div>
             </div>

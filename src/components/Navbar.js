@@ -16,7 +16,7 @@ const Navbar = () => {
                             <li><Link to='/projects'>Projects</Link></li>
                             <li><Link to='/about'>About</Link></li>
                             <li><Link to='/contact'>Contact</Link></li>
-                            <li><a href='' class="btn btn-dark border-none text-white px-4 font-semibold">Download Resume</a></li>
+                            <li><a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/15ka36LpmP1yD4NX7_7Iw7iydKCtjP3fa/view?usp=sharing' class="btn bg-primary hover:bg-dark hover:text-white border-none px-4 font-semibold" download>Resume</a></li>
                         </ul>
                     </div>
                     <Link to='/' class="text-primary font-bold btn btn-ghost normal-case text-4xl">Forhad.</Link>
@@ -38,7 +38,7 @@ const Navbar = () => {
                         <li>
                             <NavLink to='/contact' className={({ isActive }) => isActive ? 'text-primary' : ''}>Contact</NavLink>
                         </li>
-                        <li><a href='' class="btn btn-dark border-none text-white px-4 font-semibold">Download Resume</a></li>
+                        <li><a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/15ka36LpmP1yD4NX7_7Iw7iydKCtjP3fa/view?usp=sharing' class="btn bg-primary hover:bg-dark hover:text-white border-none px-4 font-semibold" download>Resume</a></li>
                     </ul>
                 </div>
             </div>
