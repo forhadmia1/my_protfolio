@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import useProjects from '../../hooks/useProjects';
 import ProjectCard from './ProjectCard';
 
 const Projects = () => {
-    const [projects, setProjects] = useState([])
-    useEffect(() => {
-        fetch('Project.json')
-            .then(res => res.json())
-            .then(data => setProjects(data))
-    }, [])
+    const [projects] = useProjects()
     return (
         <section className='py-16'>
             <div>

@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ProjectCard = ({ project }) => {
+    const navigate = useNavigate()
 
     return (
         <div class="card w-full bg-base-100 shadow-2xl">
@@ -10,7 +12,7 @@ const ProjectCard = ({ project }) => {
             <div className='px-4 pb-4'>
                 <h2 class="card-title">{project.name}</h2>
                 <div class="card-actions justify-start mt-4 w-full">
-                    <button class="btn w-full hover:text-white rounded-none btn-primary">Show Details</button>
+                    <button onClick={() => navigate(`/project/${project.id}`)} class="btn w-full hover:text-white rounded-none btn-primary">Show Details</button>
                 </div>
             </div>
         </div>
