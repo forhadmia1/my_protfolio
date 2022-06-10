@@ -25,8 +25,19 @@ const SingleProject = () => {
                 <div class="block rounded-lg shadow-lg bg-white">
                     <div class="flex flex-wrap items-center">
                         <div class="grow-0 shrink-0 basis-auto block lg:flex w-full lg:w-6/12 xl:w-4/12">
-                            <img src={project?.image} alt="Trendy Pants and Shoes"
-                                class="w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" />
+                            <div className='flex justify-center items-center w-full gap-5'>
+                                <div class="h-[450px] w-10/12 carousel carousel-vertical rounded-box">
+                                    <div class="carousel-item h-full">
+                                        <img src={project?.image[0]} alt='' />
+                                    </div>
+                                    <div class="carousel-item h-full">
+                                        <img src={project?.image[1]} alt='' />
+                                    </div>
+                                    <div class="carousel-item h-full">
+                                        <img src={project?.image[2]} alt='' />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-8/12">
                             <div class="px-6 py-12 md:px-12">
