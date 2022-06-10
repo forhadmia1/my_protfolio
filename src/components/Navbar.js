@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <nav className='bg-base-100 md:px-12'>
+        <nav className='bg-base-100 md:px-12 sticky top-0 z-50'>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -16,17 +16,29 @@ const Navbar = () => {
                             <li><Link to='/projects'>Projects</Link></li>
                             <li><Link to='/about'>About</Link></li>
                             <li><Link to='/contact'>Contact</Link></li>
+                            <li><a href='' class="btn btn-dark border-none text-white px-4 font-semibold">Download Resume</a></li>
                         </ul>
                     </div>
-                    <Link to='/' class="btn btn-ghost normal-case text-xl">Forhad</Link>
+                    <Link to='/' class="text-primary font-bold btn btn-ghost normal-case text-4xl">Forhad.</Link>
                 </div>
                 <div class="navbar-end hidden lg:flex">
-                    <ul class="menu menu-horizontal p-0 text-white">
-                        <li><Link to='/home'>Home</Link></li>
-                        <li><Link to='/blogs'>Blogs</Link></li>
-                        <li><Link to='/projects'>Projects</Link></li>
-                        <li><Link to='/about'>About</Link></li>
-                        <li><Link to='/contact'>Contact</Link></li>
+                    <ul class="menu menu-horizontal p-0 font-semibold">
+                        <li>
+                            <NavLink to='/home' className={({ isActive }) => isActive ? 'text-primary' : ''}>Home</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/blogs' className={({ isActive }) => isActive ? 'text-primary' : ''}>Blogs</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/projects' className={({ isActive }) => isActive ? 'text-primary' : ''}>Projects</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/about' className={({ isActive }) => isActive ? 'text-primary' : ''}>About</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/contact' className={({ isActive }) => isActive ? 'text-primary' : ''}>Contact</NavLink>
+                        </li>
+                        <li><a href='' class="btn btn-dark border-none text-white px-4 font-semibold">Download Resume</a></li>
                     </ul>
                 </div>
             </div>
