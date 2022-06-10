@@ -8,6 +8,8 @@
         "description":[
            "Fully authenticated by google authentication.",
             "Integrated payment method.",
+            "Use can make an order and also delete the order.",
+            "An admin can manage all order, and also delete order that is not paid.",
             "The website is fully responsive for mobile and desktop.",
             "There is a dashboard that gives access to different routes between user and admin."
         ],
@@ -25,21 +27,22 @@
            "Authenticated by google authentication.",
             "User can add and update existing product quantities and delete them.",
             "Integrated pagination.",
-            "Dynamic page title is integrated."
+            "Dynamic page title is integrated.",
+            "Update a product stock quantity."
         ],
         "technology":"React.js, React Router, Axios, React Modal, React Helmet Async, Mongo Db, Tailwind CSS, Heroku, Firebase.",
         "live_link":"https://laptop-stockroom.web.app/",
         "client_code":"https://github.com/forhadmia1/Laptop_stockroom_client_Side",
         "server_code":"https://github.com/forhadmia1/Laptop_stockroom_server_side"
     },
-    
+
     {
         "id":3,
         "name":"Just Justice",
         "image":["https://i.ibb.co/gmYQBjq/Screenshot-5.jpg","https://i.ibb.co/0X2m92F/Screenshot-10.png","https://i.ibb.co/mT7xxR0/Screenshot-11.png"],
         "description":[
            "It is an individual service provider web app.",
-            "This website is fully responsive.",
+            "This website is fully responsive for mobile and desktop.",
             "User can book a service.",
             "Authenticated by firebase authentication."
         ],

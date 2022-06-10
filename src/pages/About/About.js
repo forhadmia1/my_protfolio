@@ -15,8 +15,11 @@ const About = () => {
             </div>
             <div className='px-6 md:px-12 my-16'>
                 <h2 className='text-2xl font-bold text-primary'>About Me</h2>
-                <p className='text-xl text-gray-500'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptatum ea aperiam porro quis, odio voluptates quibusdam vero sunt. Et quam ipsam id odit eum dicta beatae, mollitia cumque, ad sunt dolorum odio quaerat hic similique neque. Dolorum, vitae accusantium.
+                <p className='text-xl text-gray-500 text-justify'>
+                    Hi there,<br />
+                    I am Forhad mia. I am a junior web developer. I learned HTML, CSS javascript, react.js, express.js, MongoDB, and many more. I am very much passionate about those works.
+                    <br />
+                    I finished web development course from complete web development course with Jhankar Mahbub. I am curious to explore new technologies. I believe that I grow in my career in this field because I am a hardworking and self-learning person.
                 </p>
             </div>
         </div>
