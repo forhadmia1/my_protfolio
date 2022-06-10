@@ -41,6 +41,7 @@ const Skills = () => {
                         <h2 className='text-xl font-bold '>Comfortable:</h2>
                         <ul className='flex list-disc gap-4 list-inside flex-wrap font-semibold'>
                             <li>Express.js</li>
+                            <li>Node.js</li>
                             <li>Mongo Db</li>
                             <li>Firebase</li>
                             <li>Daisy UI</li>
