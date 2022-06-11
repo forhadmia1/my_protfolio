@@ -11,7 +11,7 @@ const Projects = () => {
                 <h3 className='text-xl font-semibold text-center'>Least Projects</h3>
             </div>
             <div>
-                <div class="grid md:grid-cols-3 p-4 grid-cols-1 md:px-12 mt-12 justify-items-center gap-10">
+                <div className="grid md:grid-cols-3 p-4 grid-cols-1 md:px-12 mt-12 justify-items-center gap-10">
                     {
                         projects.map(project => <ProjectCard
                             key={project.id}

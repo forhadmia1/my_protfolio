@@ -28,12 +28,12 @@ const Contact = () => {
             </div>
             <div className='flex gap-10 p-4 md:flex-row flex-col md:px-12'>
                 <div className='h-full flex justify-center'>
-                    <div class="card h-full w-96 bg-base-100 shadow-2xl">
+                    <div className="card h-full w-96 bg-base-100 shadow-2xl">
                         <div className='p-4'>
                             <figure><img className='rounded-lg' src={businesspic} alt='business' /></figure>
                         </div>
                         <div className='px-4 pb-8 mt-4'>
-                            <h2 class="card-title font-bold text-4xl">Forhad Mia</h2>
+                            <h2 className="card-title font-bold text-4xl">Forhad Mia</h2>
                             <h4 className='text-lg text-primary font-semibold'>Web Developer ( MERN Stack )</h4>
                             <p className='mt-4'>
                                 I am a junior web developer. Are you looking for a hardworking person? I am here to help you. Thanks
@@ -47,18 +47,18 @@ const Contact = () => {
                 </div>
                 <div className='flex-grow rounded-lg shadow-2xl p-4'>
                     <form ref={form} onSubmit={sendEmail} className=' w-full flex flex-col'>
-                        <label class="label">
-                            <span class="label-text text-lg font-semibold">Name:</span>
+                        <label className="label">
+                            <span className="label-text text-lg font-semibold">Name:</span>
                         </label>
-                        <input type="text" name="user_name" placeholder="Enter your name" class="input input-bordered w-full " required />
-                        <label class="label mt-2">
-                            <span class="label-text text-lg font-semibold">Email:</span>
+                        <input type="text" name="user_name" placeholder="Enter your name" className="input input-bordered w-full " required />
+                        <label className="label mt-2">
+                            <span className="label-text text-lg font-semibold">Email:</span>
                         </label>
-                        <input type="email" name="user_email" placeholder="Enter your email" class="input input-bordered w-full" required />
-                        <label class="label mt-2">
-                            <span class="label-text text-lg font-semibold">Message:</span>
+                        <input type="email" name="user_email" placeholder="Enter your email" className="input input-bordered w-full" required />
+                        <label className="label mt-2">
+                            <span className="label-text text-lg font-semibold">Message:</span>
                         </label>
-                        <textarea name="message" class="textarea textarea-bordered h-24 w-full " placeholder="Message" required></textarea>
+                        <textarea name="message" className="textarea textarea-bordered h-24 w-full " placeholder="Message" required></textarea>
                         <div>
                             <input className='btn hover:text-white btn-primary mt-4' type="submit" value="Send Message" />
                         </div>

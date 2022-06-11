@@ -23,9 +23,9 @@ const HeroArea = () => {
                         I am very passionate about working with programming and related tasks. I am very curious to explore new technologies. I am hardworking and a reliable person.
                     </p>
                     <div className='flex gap-5'>
-                        <button class="btn bg-primary border-none hover:bg-dark text-black hover:text-white rounded-none px-4 border-2 font-semibold" onClick={saveFile}>Download Resume</button>
+                        <button className="btn bg-primary border-none hover:bg-dark text-black hover:text-white rounded-none px-4 border-2 font-semibold" onClick={saveFile}>Download Resume</button>
 
-                        <button onClick={() => navigate('/about')} class="btn bg-dark hover:bg-primary border-none text-white hover:text-black rounded-none px-10 border-2 font-semibold">About Me</button>
+                        <button onClick={() => navigate('/about')} className="btn bg-dark hover:bg-primary border-none text-white hover:text-black rounded-none px-10 border-2 font-semibold">About Me</button>
                     </div>
                 </div>
             </div>
