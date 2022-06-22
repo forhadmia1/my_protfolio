@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import heroImg from '../../Assets/Image/IMG20190904153853-01.png'
 import '../../App.css';
 import { useNavigate } from 'react-router-dom';
+import AOS from 'aos';
 
 const HeroArea = () => {
     const navigate = useNavigate()
+
+    useEffect(() => {
+        AOS.init({
+            duration: 2000
+        });
+    }, []);
+
     return (
         <section className='grid grid-cols-1 gap-8 md:grid-cols-2 py-20 px-4 md:px-12 md:mt-10 justify-items-center place-items-center'>
             <div className='flex items-center order-2'>
@@ -22,7 +30,7 @@ const HeroArea = () => {
                     </div>
                 </div>
             </div>
-            <div className='p-3 rounded-full bg-slate-400 w-fit order-1 md:order-3'>
+            <div data-aos="flip-right" className='p-3 rounded-full bg-slate-400 w-fit order-1 md:order-3'>
                 <img className='w-80 h-80 rounded-full' src={heroImg} alt="" />
             </div>
         </section>

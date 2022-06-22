@@ -10,6 +10,7 @@ import AboutMe from './pages/About/AboutMe';
 import ProjectPage from './pages/ProjectPage/ProjectPage';
 import SingleProject from './pages/ProjectPage/SingleProject';
 import NotFound from './components/NotFound';
+import "aos/dist/aos.css";
 
 function App() {
   return (
