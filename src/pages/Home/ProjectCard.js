@@ -5,7 +5,7 @@ const ProjectCard = ({ project }) => {
     const navigate = useNavigate()
 
     return (
-        <div className="card w-full bg-base-100 shadow-2xl">
+        <div className="card w-full bg-base-100 shadow-2xl hover:-translate-y-5 duration-300">
             <div className='p-4'>
                 <figure><img className='rounded-lg hover:scale-110 duration-300' src={project?.image[0]} alt={project?.name} /></figure>
             </div>
