@@ -5,7 +5,7 @@
   content: '';
   position: absolute;
   top: 0;
-  left:72px;
+  left:80px;
   animation: typing 20s ease 1s infinite;
   animation-play-state: running;
 }
