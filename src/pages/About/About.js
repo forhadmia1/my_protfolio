@@ -9,7 +9,7 @@ const About = () => {
                     <img className='w-60 h-60 rounded-full' src={myphoto} alt="" />
                 </div>
                 <div className='mt-4'>
-                    <h2 className='text-center text-5xl font-bold'>Md Forhad Mia</h2>
+                    <h2 className='text-center text-4xl md:text-5xl font-bold'>Md Forhad Mia</h2>
                     <h4 className='text-center text-primary font-semibold mt-2 text-2xl'>Junior Web Developer</h4>
                 </div>
             </div>
