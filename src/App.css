@@ -1,11 +1,10 @@
 .banner-title{
   position: relative;
 }
-.banner-title::before{
+.banner-title::after{
   content: '';
   position: absolute;
   top: 0;
-  left:80px;
   animation: typing 20s ease 1s infinite;
   animation-play-state: running;
 }

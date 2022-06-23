@@ -18,8 +18,8 @@ const HeroArea = () => {
             <div className='flex items-center order-2'>
                 <div>
                     <p className='text-xl mb-2 font-semibold'>Hello, I am</p>
-                    <h2 className='text-6xl font-bold mb-4 text-primary'>Forhad Mia</h2>
-                    <h3 className='mb-4 text-2xl banner-title font-semibold'>I am a</h3>
+                    <h2 className='text-5xl ml-[-2px] md:text-6xl font-bold mb-4 text-primary'>Forhad Mia</h2>
+                    <h3 className='mb-4 text-xl md:text-2xl banner-title font-semibold'><span className='mr-2'>I am a</span></h3>
                     <p className='mb-4 text-xl text-gray-500'>
                         I am very passionate about working with programming and related tasks. I am very curious to explore new technologies. I am hardworking and a reliable person.
                     </p>
