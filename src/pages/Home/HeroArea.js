@@ -23,10 +23,10 @@ const HeroArea = () => {
                     <p className='mb-4 text-xl text-gray-500'>
                         I am very passionate about working with programming and related tasks. I am very curious to explore new technologies. I am hardworking and a reliable person.
                     </p>
-                    <div className='flex gap-5'>
+                    <div className='flex gap-3 md:gap-5'>
                         <a href='https://drive.google.com/uc?export=download&id=15ka36LpmP1yD4NX7_7Iw7iydKCtjP3fa' className="btn bg-primary border-none hover:bg-dark text-black hover:text-white rounded-none px-4 border-2 font-semibold">Download Resume</a>
 
-                        <button onClick={() => navigate('/about')} className="btn bg-dark hover:bg-primary border-none text-white hover:text-black rounded-none px-10 border-2 font-semibold">About Me</button>
+                        <button onClick={() => navigate('/about')} className="btn bg-dark hover:bg-primary border-none text-white hover:text-black rounded-none px-8 md:px-10 border-2 font-semibold">About Me</button>
                     </div>
                 </div>
             </div>
