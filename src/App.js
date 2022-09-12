@@ -14,7 +14,7 @@ import "aos/dist/aos.css";
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -27,7 +27,7 @@ function App() {
         <Route path='*' element={<NotFound />} />
       </Routes>
       <ToastContainer />
-    </div>
+    </>
   );
 }
 

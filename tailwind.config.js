@@ -6,11 +6,11 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: "#7C83FD",
-          secondary: "#f6d860",
-          accent: "#37cdbe",
+          primary: "#00CF5D",
+          secondary: "#FFFFFF",
+          accent: "#1D293A",
           neutral: "#3d4451",
-          "base-100": "#F0F4F7",
+          "base-100": "#111A28",
         }
       }
     ],
