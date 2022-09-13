@@ -2,9 +2,10 @@ import React, { useEffect } from 'react';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
-import businesspic from '../../Assets/Image/Business.jpg'
+import businesspic from '../Assets/Image/Business.jpg'
 import { MdOutlineAlternateEmail } from 'react-icons/md'
 import AOS from 'aos';
+import SectionTitle from './SectionTitle';
 
 const Contact = () => {
     useEffect(() => {
@@ -28,13 +29,10 @@ const Contact = () => {
     };
     return (
         <div className='my-10 overflow-hidden pb-10'>
-            <div className='mb-10'>
-                <h2 className='text-4xl text-center text-primary font-bold'>CONTACT</h2>
-                <h3 className='text-xl text-center font-semibold'>Contat With Me</h3>
-            </div>
-            <div className='flex gap-10 p-4 md:flex-row flex-col md:px-12'>
+            <SectionTitle width={170}>Contact Me</SectionTitle>
+            <div className='flex mt-10 gap-10 p-4 md:flex-row flex-col md:px-12'>
                 <div data-aos="fade-right" className='h-full flex justify-center'>
-                    <div className="card h-full w-96 bg-base-100 shadow-2xl">
+                    <div className="card h-full w-96 bg-accent shadow-2xl">
                         <div className='p-4'>
                             <figure><img className='rounded-lg' src={businesspic} alt='business' /></figure>
                         </div>
@@ -51,7 +49,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-left" className='flex-grow rounded-lg shadow-2xl p-4'>
+                <div data-aos="fade-left" className='flex-grow bg-accent rounded-lg shadow-2xl p-4'>
                     <form ref={form} onSubmit={sendEmail} className=' w-full flex flex-col'>
                         <label className="label">
                             <span className="label-text text-lg font-semibold">Name:</span>

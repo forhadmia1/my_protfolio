@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../../components/Footer';
+import Footer from './Footer';
 import { BsBookHalf } from 'react-icons/bs'
 import { FaBook } from 'react-icons/fa'
 
@@ -70,7 +70,6 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 };

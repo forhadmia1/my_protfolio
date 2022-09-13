@@ -15,12 +15,12 @@ const Navbar = () => {
                 </div>
                 <div className='w-full justify-end'>
                     <div className="dropdown">
-                        <div className='w-10 h-10 bg-primary flex justify-center items-center rounded lg:hidden'>
+                        <div className='w-10 h-10 bg-primary flex justify-center items-center rounded lg:hidden m-3'>
                             <label tabIndex="0" className=" text-accent">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                             </label>
                         </div>
-                        <ul tabIndex="0" className="dropdown-content mt-2 py-4 shadow bg-accent text-secondary rounded w-96 right-0 px-6 flex gap-3 flex-col">
+                        <ul tabIndex="0" className="dropdown-content mt-1 py-4 shadow bg-accent text-secondary rounded w-48 right-2 px-6 flex gap-3 flex-col">
                             <li className='items-end'><Link className='w-full justify-end' to='/home'><span>Home</span></Link></li>
                             <li className='items-end'><Link className='w-full justify-end' to='/blogs'><span>Blogs</span></Link></li>
                             <li className='items-end'><Link className='w-full justify-end' to='/projects'><span>Projects</span></Link></li>
@@ -35,7 +35,7 @@ const Navbar = () => {
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu-horizontal gap-10 p-0 font-semibold">
                         <li>
-                            <NavLink to='/home' className={({ isActive }) => isActive ? 'text-primary' : 'text-secondary'}>Home</NavLink>
+                            <NavLink to='#hero-section' className={({ isActive }) => isActive ? 'text-primary' : 'text-secondary'}>Home</NavLink>
                         </li>
                         <li>
                             <NavLink to='/blogs' className={({ isActive }) => isActive ? 'text-primary' : 'text-secondary'}>Blogs</NavLink>
@@ -44,7 +44,7 @@ const Navbar = () => {
                             <NavLink to='/projects' className={({ isActive }) => isActive ? 'text-primary' : 'text-secondary'}>Projects</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/about' className={({ isActive }) => isActive ? 'text-primary' : 'text-secondary'}>About</NavLink>
+                            <NavLink to='#about' className={({ isActive }) => isActive ? 'text-primary' : 'text-secondary'}>About</NavLink>
                         </li>
                         <li>
                             <NavLink to='/contact' className={({ isActive }) => isActive ? 'text-primary' : 'text-secondary'}>Contact</NavLink>
