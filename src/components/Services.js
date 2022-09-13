@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { FaReact, FaLaptopCode } from 'react-icons/fa';
 import { BiCodeCurly } from 'react-icons/bi';
 import AOS from 'aos';
+import SectionTitle from './SectionTitle';
 
 const Services = () => {
 
@@ -13,8 +14,7 @@ const Services = () => {
 
     return (
         <div className='mt-16'>
-            <h2 className='text-center font-bold text-4xl text-primary'>Services</h2>
-            <h4 className='text-xl font-semibold text-center'>What I will do for you?</h4>
+            <SectionTitle width={125}>Services</SectionTitle>
             <div className='grid grid-cols-1 gap-10 md:gap-5 md:grid-cols-3 md:px-12 px-4 mt-16'>
                 <div data-aos="zoom-in-up" className="card bg-base-100 shadow-xl hover:bg-slate-800 hover:bg-opacity-80 hover:text-white duration-500">
                     <div className='px-8 pb-0 pt-4'>

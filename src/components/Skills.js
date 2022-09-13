@@ -1,11 +1,12 @@
 import React from 'react';
-import Footer from './Footer';
 import { BsBookHalf } from 'react-icons/bs'
 import { FaBook } from 'react-icons/fa'
+import SectionTitle from './SectionTitle';
 
 const Skills = () => {
     return (
         <div>
+            <SectionTitle width={120}>My Skills</SectionTitle>
             <div className='grid grid-cols-1 md:grid-cols-2 mt-10 gap-10 mb-10 px-6 md:px-12'>
                 <div className=' shadow-xl p-6 rounded-lg'>
                     <h2 className='text-4xl font-bold text-primary mb-2 uppercase'>Education</h2>

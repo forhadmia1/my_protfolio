@@ -3,9 +3,9 @@ import About from '../../components/About';
 import Contact from '../../components/Contact';
 import Footer from '../../components/Footer';
 import HeroArea from '../../components/HeroArea';
+import Projects from '../../components/Projects';
+import Services from '../../components/Services';
 import Skills from '../../components/Skills';
-import Projects from './Projects';
-import Services from './Services';
 
 const Home = () => {
     return (

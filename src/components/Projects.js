@@ -1,15 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import useProjects from '../../hooks/useProjects';
+import React from 'react';
+import useProjects from '../hooks/useProjects';
 import ProjectCard from './ProjectCard';
+import SectionTitle from './SectionTitle';
 
 const Projects = () => {
     const [projects] = useProjects()
     return (
         <section className='py-16'>
-            <div>
-                <h2 className="text-4xl font-bold text-primary text-center" >Protfolio</h2>
-                <h3 className='text-xl font-semibold text-center'>Least Projects</h3>
-            </div>
+            <SectionTitle width={120}>Portfolio</SectionTitle>
             <div>
                 <div className="grid md:grid-cols-3 p-4 grid-cols-1 md:px-12 mt-12 justify-items-center gap-10">
                     {

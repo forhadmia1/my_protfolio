@@ -5,9 +5,9 @@ import Home from './pages/Home/Home';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Blogs from './pages/Blogs/Blogs';
-import SingleProject from './pages/ProjectPage/SingleProject';
 import NotFound from './components/NotFound';
 import "aos/dist/aos.css";
+import SingleProject from './components/SingleProject';
 
 function App() {
   return (
