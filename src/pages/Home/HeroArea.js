@@ -25,7 +25,9 @@ const HeroArea = () => {
                 </div>
             </div>
             <div>
-                <SectionTitle>About Me</SectionTitle>
+                <div className='md:hidden'>
+                    <SectionTitle width='120'>About Me</SectionTitle>
+                </div>
                 <ul className='flex gap-8 md:flex-col text-4xl md:mr-28'>
                     <li><AiFillGithub /></li>
                     <li><AiFillGithub /></li>
