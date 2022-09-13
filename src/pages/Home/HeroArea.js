@@ -1,39 +1,39 @@
-import React, { useEffect } from 'react';
-import heroImg from '../../Assets/Image/IMG20190904153853-01.png'
+import React from 'react';
 import '../../App.css';
 import { useNavigate } from 'react-router-dom';
-import AOS from 'aos';
+import { AiFillGithub } from 'react-icons/ai'
+import SectionTitle from '../../components/SectionTitle';
 
 const HeroArea = () => {
     const navigate = useNavigate()
 
-    useEffect(() => {
-        AOS.init({
-            duration: 2000
-        });
-    }, []);
-
     return (
-        <section className='grid grid-cols-1 gap-8 md:grid-cols-2 py-20 px-4 md:px-12 md:mt-10 justify-items-center place-items-center'>
-            <div className='flex items-center order-2'>
-                <div>
-                    <p className='text-xl mb-2 font-semibold'>Hello, I am</p>
-                    <h2 className='text-5xl ml-[-2px] md:text-6xl font-bold mb-4 text-primary'>Forhad Mia</h2>
-                    <h3 className='mb-4 text-xl md:text-2xl banner-title font-semibold'><span className='mr-2'>I am a</span></h3>
-                    <p className='mb-4 text-xl text-gray-500'>
-                        I am very passionate about working with programming and related tasks. I am very curious to explore new technologies. I am hardworking and a reliable person.
-                    </p>
-                    <div className='flex gap-3 md:gap-5'>
-                        <a href='https://drive.google.com/uc?export=download&id=15ka36LpmP1yD4NX7_7Iw7iydKCtjP3fa' className="btn bg-primary border-none hover:bg-dark text-black hover:text-white rounded-none px-4 border-2 font-semibold">Download Resume</a>
+        <section className='container md:px-12 md:h-screen md:mt-[-100px] mt-5 flex items-center flex-col md:flex-row-reverse'>
+            <div className='md:text-left text-center w-full'>
+                <p className='text-2xl mb-2 text-primary'>Hello, I am</p>
+                <h2 className='text-5xl ml-[-2px] md:text-7xl font-bold mb-4 text-secondary'>Forhad Mia</h2>
+                <h3 className='mb-4 text-xl md:text-2xl font-semibold'><span className='text-primary text-2xl'>Full Stack Developer</span></h3>
+                <ul className='md:flex md:gap-3 text-secondary text-lg mt-[-15px]'>
+                    <li>Web Developer</li>
+                    <li><span className='text-primary mr-2 md:inline-block hidden'>|</span> Frontend Developer</li>
+                    <li><span className='text-primary mr-2 md:inline-block hidden'>|</span>MERN Stack Developer</li>
+                </ul>
+                <div className='flex md:justify-start justify-center gap-3 md:gap-5 mt-10'>
+                    <a href='https://drive.google.com/uc?export=download&id=15ka36LpmP1yD4NX7_7Iw7iydKCtjP3fa' className="p-3 text-secondary rounded bg-primary">Download Resume</a>
 
-                        <button onClick={() => navigate('/about')} className="btn bg-dark hover:bg-primary border-none text-white hover:text-black rounded-none px-8 md:px-10 border-2 font-semibold">About Me</button>
-                    </div>
+                    <button onClick={() => navigate('/about')} className="p-3 border-2 border-primary rounded text-secondary">About Me</button>
                 </div>
             </div>
-            <div data-aos="flip-right" className='p-3 rounded-full bg-slate-400 w-fit order-1 md:order-3'>
-                <img className='w-80 h-80 rounded-full' src={heroImg} alt="" />
+            <div>
+                <SectionTitle>About Me</SectionTitle>
+                <ul className='flex gap-8 md:flex-col text-4xl md:mr-28'>
+                    <li><AiFillGithub /></li>
+                    <li><AiFillGithub /></li>
+                    <li><AiFillGithub /></li>
+                    <li><AiFillGithub /></li>
+                </ul>
             </div>
-        </section>
+        </section >
 
     );
 };

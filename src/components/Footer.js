@@ -4,7 +4,7 @@ import { FiGithub } from 'react-icons/fi';
 
 const Footer = () => {
     return (
-        <footer className="footer footer-center p-10 bg-base-100 text-base-content rounded">
+        <footer className="footer footer-center p-10 bg-accent text-base-content rounded">
             <div>
                 <h2 className='text-2xl font-bold text-primary mb-4'>Contact With Me</h2>
                 <div className="grid grid-flow-col gap-5 text-2xl">
