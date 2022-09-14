@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import useProjects from '../hooks/useProjects';
+import { IoCaretBack } from 'react-icons/io5'
 
 const SingleProject = () => {
+    const navigate = useNavigate()
     const { id } = useParams()
     const [projects, loading] = useProjects()
     const [project, setProject] = useState({})
@@ -18,9 +20,16 @@ const SingleProject = () => {
     if (loading || projectLoading) {
         return <p>Loading......</p>
     }
+
     return (
         <section className="container mt-2 px-6 mx-auto">
-            <div className=" text-gray-800 text-center md:text-left">
+            <div className='flex justify-start mb-4 mt-4'>
+                <div onClick={() => navigate(-1)} className='p-3 bg-accent shadow rounded py-2 px-4 flex items-center gap-2 font-bold cursor-pointer z-50'>
+                    <IoCaretBack className='text-neutral text-2xl font-bold ' />
+                    <span className='text-neutral'>Back</span>
+                </div>
+            </div>
+            <div className="mt-5 text-gray-800 text-center md:text-left">
                 <div className="block rounded-lg shadow-lg bg-accent">
                     <div className="flex flex-wrap items-center">
                         <div className="grow-0 shrink-0 basis-auto block lg:flex w-full lg:w-6/12 xl:w-4/12">
@@ -50,10 +59,10 @@ const SingleProject = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-8/12">
+                        <div className="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-8/12 lg:bg-accent bg-base-100">
                             <div className="px-6 py-12 md:px-12">
                                 <h2 className="text-3xl font-bold mb-6 pb-2 text-primary">{project?.name}</h2>
-                                <ul className="text-gray-600 mb-6 pb-2 text-left">
+                                <ul className=" mb-6 pb-2 text-left">
                                     {
                                         project?.description.map((list, index) => <li
                                             key={index}
@@ -94,7 +103,7 @@ const SingleProject = () => {
                 </div>
             </div>
 
-        </section>
+        </section >
     );
 };
 

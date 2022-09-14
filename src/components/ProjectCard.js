@@ -13,7 +13,7 @@ const ProjectCard = ({ project }) => {
 
     return (
         <div data-aos="zoom-in">
-            <div className="rounded w-full bg-accent hover:-translate-y-5 duration-300">
+            <div className="rounded w-full bg-accent hover:scale-105 duration-300">
                 <div className='h-40 w-full overflow-hidden'>
                     <img className='rounded image-full' src={project?.image[0]} alt={project?.name} />
                 </div>
@@ -21,7 +21,7 @@ const ProjectCard = ({ project }) => {
                     <h2 className="text-2xl font-semibold text-neutral">{project?.name}</h2>
                     <p className='text-neutral mt-6'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque beatae inventore totam, repellendus quos earum quo nostrum sequi nemo.</p>
                     <div className="card-actions justify-start mt-4 w-full">
-                        <button onClick={() => navigate(`/project/${project?.id}`)} className="btn w-full hover:text-white rounded-none btn-primary">Show Details</button>
+                        <button onClick={() => navigate(`/project/${project?.id}`)} className="w-full hover:text-white border-2 py-2 text-neutral border-primary rounded">Show Details</button>
                     </div>
                 </div>
             </div>

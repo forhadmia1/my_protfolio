@@ -20,7 +20,7 @@ const HeroArea = () => {
     }
 
     return (
-        <section id='hero_section' className='md:px-12 sm:w-full lg:h-screen md:py-48 lg:mt-[-100px] mt-5 flex items-center flex-col md:flex-row-reverse'>
+        <section id='hero_section' className='md:px-12 sm:w-full lg:h-screen md:py-48 flex items-center flex-col md:flex-row-reverse'>
             <div className='md:text-left text-center w-full'>
                 <p className='text-2xl mb-2 text-primary'>Hello, I am</p>
                 <h2 className='text-5xl ml-[-2px] md:text-7xl font-bold mb-4 text-secondary'>Forhad Mia</h2>

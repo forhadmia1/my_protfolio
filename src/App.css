@@ -1,3 +1,22 @@
+nav {
+    position: fixed;
+    transform: translateY(0);
+    transition: 0.5s all;
+}
+
+/* nav.compaq {
+    background-color: #1d293a;
+} */
+
+nav.hide {
+    transform: translateY(-120px);
+}
+
+/* nav.compaq .container {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+} */
+/* 
 .banner-title{
   position: relative;
 }
@@ -267,5 +286,5 @@
     color:royalblue;
   }
   
-}
+} */
 

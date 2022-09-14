@@ -11,8 +11,8 @@ const SectionTitle = ({ children, width }) => {
                         d={`M5 20 Q 70 0 ${width} 20`}
                         stroke="#00cf5d"
                         fill="transparent"
-                        stroke-width="7"
-                        stroke-linecap="round" />
+                        strokeWidth="7"
+                        strokeLinecap="round" />
                 </svg>
             </div>
         </div>
