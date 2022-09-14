@@ -1,18 +1,16 @@
 import './App.css';
-import Navbar from './components/Navbar';
 import { Route, Routes } from 'react-router-dom';
-import Home from './pages/Home/Home';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Blogs from './pages/Blogs/Blogs';
-import NotFound from './components/NotFound';
 import "aos/dist/aos.css";
 import SingleProject from './components/SingleProject';
+import Blogs from './pages/Blogs';
+import NotFound from './pages/NotFound';
+import Home from './pages/Home';
 
 function App() {
   return (
     <>
-      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/blogs' element={<Blogs />} />

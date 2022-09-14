@@ -19,9 +19,9 @@ const SingleProject = () => {
         return <p>Loading......</p>
     }
     return (
-        <div className="container my-20 px-6 mx-auto">
-            <section className="mb-32 text-gray-800 text-center md:text-left">
-                <div className="block rounded-lg shadow-lg bg-white">
+        <section className="container mt-2 px-6 mx-auto">
+            <div className=" text-gray-800 text-center md:text-left">
+                <div className="block rounded-lg shadow-lg bg-accent">
                     <div className="flex flex-wrap items-center">
                         <div className="grow-0 shrink-0 basis-auto block lg:flex w-full lg:w-6/12 xl:w-4/12">
                             <div className='flex justify-center items-center w-full gap-5'>
@@ -52,38 +52,38 @@ const SingleProject = () => {
                         </div>
                         <div className="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-8/12">
                             <div className="px-6 py-12 md:px-12">
-                                <h2 className="text-3xl font-bold mb-6 pb-2">{project?.name}</h2>
+                                <h2 className="text-3xl font-bold mb-6 pb-2 text-primary">{project?.name}</h2>
                                 <ul className="text-gray-600 mb-6 pb-2 text-left">
                                     {
                                         project?.description.map((list, index) => <li
                                             key={index}
-                                            className='list-disc list-inside text-xl'>{list}</li>)
+                                            className='list-disc list-inside text-xl text-neutral'>{list}</li>)
                                     }
                                 </ul>
                                 <div>
-                                    <h2 className='text-xl font-bold'>Technologies:</h2>
-                                    <p className='text-md font-semibold'>{project?.technology}</p>
+                                    <h2 className='text-xl font-bold text-primary'>Technologies:</h2>
+                                    <p className='text-md text-neutral'>{project?.technology}</p>
                                 </div>
                                 <div className="flex flex-wrap mb-6 gap-10 mt-10">
                                     <a
                                         href={project?.live_link}
                                         target='_blank'
                                         rel="noreferrer"
-                                        className="inline-block px-7 py-3 bg-gray-800 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">
+                                        className="py-2 px-4 rounded border-2 border-primary text-neutral">
                                         Live Link
                                     </a>
                                     <a
                                         href={project?.client_code}
                                         target='_blank'
                                         rel="noreferrer"
-                                        className="inline-block px-7 py-3 bg-gray-800 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">
+                                        className="py-2 px-4 rounded border-2 border-primary text-neutral">
                                         Client-Side Code
                                     </a>
                                     {project?.server_code && <a
                                         href={project?.server_code}
                                         target='_blank'
                                         rel="noreferrer"
-                                        className="inline-block px-7 py-3 bg-gray-800 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">
+                                        className="py-2 px-4 rounded border-2 border-primary text-neutral">
                                         Server-side Code
                                     </a>}
                                 </div>
@@ -92,9 +92,9 @@ const SingleProject = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-        </div>
+        </section>
     );
 };
 
