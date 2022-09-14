@@ -30,11 +30,11 @@ const Contact = () => {
     return (
         <section id='contact' className='my-10 overflow-hidden pb-10'>
             <SectionTitle width={200}>CONTACT ME</SectionTitle>
-            <div className='flex mt-10 gap-10 p-4 md:flex-row flex-col md:px-12'>
+            <div className='md:grid md:grid-cols-2 mt-10 gap-10 p-4 lg:flex lg:flex-row flex-col md:px-12'>
                 <div data-aos="fade-right" className='h-full flex justify-center'>
-                    <div className="card h-full w-96 bg-accent shadow-2xl">
+                    <div className="card rounded h-full lg:w-96 md:w-96 w-full bg-accent shadow-2xl">
                         <div className='p-4'>
-                            <figure><img className='rounded-lg' src={businesspic} alt='business' /></figure>
+                            <figure><img className='rounded-lg w-full' src={businesspic} alt='business' /></figure>
                         </div>
                         <div className='px-4 pb-8 mt-4'>
                             <h2 className="card-title font-bold text-4xl text-secondary">Forhad Mia</h2>
@@ -49,7 +49,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-left" className='flex-grow bg-accent rounded-lg shadow-2xl p-4'>
+                <div data-aos="fade-left" className='lg:flex-grow bg-accent rounded shadow-2xl p-4'>
                     <form ref={form} onSubmit={sendEmail} className=' w-full flex flex-col'>
                         <label className="label">
                             <span className="label-text text-secondary text-lg font-semibold">Name:</span>

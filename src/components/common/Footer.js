@@ -13,7 +13,7 @@ const Footer = () => {
         })
     }
     return (
-        <footer className="footer footer-center p-10 bg-accent text-base-content gap-3 grid md:grid-cols-3">
+        <footer className="footer footer-center p-10 bg-accent text-base-content gap-3">
             <div className='md:order-2'>
                 <div>
                     <ul className='flex gap-8 text-3xl text-secondary'>
@@ -27,15 +27,17 @@ const Footer = () => {
                     <p className='text-lg text-primary'>Copyright &copy; 2022 | Forhad Mia</p>
                 </div>
             </div>
-            <div className='flex justify-start w-full order-1'>
-                <div className='flex gap-4'>
-                    <p className='bg-base-100 py-1 px-4 rounded text-secondary text-xl border-b-4 border-primary'>ধন্যবাদ</p>
-                    <p className='bg-base-100 py-1 px-4 rounded text-secondary text-xl border-b-4 border-primary'>Thanks</p>
+            <div className='mb-5'>
+                <div className='flex justify-start w-full order-1'>
+                    <div className='flex gap-4'>
+                        <p className='bg-base-100 py-1 px-4 rounded text-secondary text-xl border-b-4 border-primary'>ধন্যবাদ</p>
+                        <p className='bg-base-100 py-1 px-4 rounded text-secondary text-xl border-b-4 border-primary'>Thanks</p>
+                    </div>
                 </div>
-            </div>
-            <div className='flex justify-end w-full order-3 mt-[-63px] md:mt-0'>
-                <div onClick={goTop} className='bg-primary p-1 text-4xl text-secondary rounded cursor-pointer'>
-                    <RiArrowUpSLine />
+                <div className='flex justify-end w-full order-3 md:mt-0 fixed bottom-4 right-4'>
+                    <div onClick={goTop} className='bg-primary p-1 text-4xl text-secondary rounded cursor-pointer'>
+                        <RiArrowUpSLine />
+                    </div>
                 </div>
             </div>
         </footer>

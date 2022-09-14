@@ -14,7 +14,7 @@ const Services = () => {
     return (
         <section id='services' className='mt-16'>
             <SectionTitle width={140}>SERVICES</SectionTitle>
-            <div className='grid grid-cols-1 gap-10 md:gap-5 md:grid-cols-4 md:px-12 px-4 mt-16'>
+            <div className='grid grid-cols-1 gap-10 md:gap-5 lg:grid-cols-4 md:grid-cols-2 md:px-12 px-4 mt-16'>
                 <div data-aos="zoom-in-up" className="card h-60 bg-accent px-6 rounded flex justify-center">
                     <div>
                         <FaReact className='text-6xl text-primary' />
