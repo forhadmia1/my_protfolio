@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { toast } from 'react-toastify';
 import businesspic from '../Assets/Image/Business.jpg'
 import { MdOutlineAlternateEmail } from 'react-icons/md'
 import AOS from 'aos';
 import SectionTitle from './SectionTitle';
+import swal from 'sweetalert';
 
 const Contact = () => {
     useEffect(() => {
@@ -18,13 +18,20 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        console.log(form.current.message)
 
-        emailjs.sendForm('service_0nolycp', 'template_qmx47hk', form.current, 'NoDhDZ5D8YebXhkbu')
+        emailjs.sendForm('service_s57s2uw', 'template_qmx47hk', form.current, 'NoDhDZ5D8YebXhkbu')
             .then((result) => {
-                toast.success('Message send successfully!')
+                swal("Good job!", "Successfully send email!", "success", {
+                    buttons: false,
+                    timer: 2000,
+                });
+                form.current.reset()
             }, (error) => {
-                toast.error('Failed! Try again.')
+                swal("Try Again", "Someting went wrong!", "error", {
+                    buttons: false,
+                    timer: 2000,
+                });
+                form.current.reset()
             });
     };
     return (
@@ -64,7 +71,7 @@ const Contact = () => {
                         </label>
                         <textarea name="message" className="textarea textarea-bordered h-24 w-full " placeholder="Message" required></textarea>
                         <div>
-                            <input className='bg-primary rounded py-3 text-secondary px-4 mt-4' type="submit" value="Send Message" />
+                            <input className='bg-primary rounded py-3 text-secondary px-4 mt-4 cursor-pointer' type="submit" value="Send Message" />
                         </div>
                     </form>
                 </div>
