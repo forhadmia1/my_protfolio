@@ -11,7 +11,6 @@ const useProjects = () => {
                 setLoading(false)
             })
     }, [])
-    console.log('from hook', projects);
     return [projects, loading]
 };
 
