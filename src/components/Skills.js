@@ -8,13 +8,13 @@ const Skills = () => {
         <section id='my_skills'>
             <SectionTitle width={140}>MY SKILLS</SectionTitle>
             <div className='grid grid-cols-1 lg:grid-cols-2 mt-10 gap-10 mb-10 px-6 md:px-12'>
-                <div className=' shadow-xl p-6 rounded-lg'>
+                <div className=' shadow-xl p-6 rounded-lg text-neutral'>
                     <h2 className='text-4xl font-bold text-primary mb-2 uppercase'>Education</h2>
                     <hr />
                     <div className='mt-10'>
                         <BsBookHalf className='text-4xl mb-2 text-primary' />
-                        <h2 className='text-2xl font-bold'>Diploma In Medical Assistant.</h2>
-                        <p className='font-bold text-slate-500'>From 2015 to 2018</p>
+                        <h2 className='text-2xl font-bold'>Bachelor of Arts</h2>
+                        <p className='font-bold text-slate-500'>From 2018 to present</p>
                     </div>
                     <div className='mt-10'>
                         <FaBook className='text-4xl mb-2 text-primary' />
@@ -22,7 +22,7 @@ const Skills = () => {
                         <p className='font-bold text-slate-500'>From January 2022 to May 2022</p>
                     </div>
                 </div>
-                <div className=' shadow-xl p-6 rounded-lg'>
+                <div className=' shadow-xl p-6 rounded-lg text-neutral'>
                     <h2 className='text-4xl font-bold text-primary mb-2 uppercase'>Skills</h2>
                     <hr />
                     <div className='mt-4'>
