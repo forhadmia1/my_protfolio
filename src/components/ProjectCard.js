@@ -19,7 +19,7 @@ const ProjectCard = ({ project }) => {
                 </div>
                 <div className='px-4 pb-4 mt-6'>
                     <h2 className="text-2xl font-semibold text-neutral">{project?.name}</h2>
-                    <p className='text-neutral mt-6'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque beatae inventore totam, repellendus quos earum quo nostrum sequi nemo.</p>
+                    <p className='text-neutral mt-6'>{project?.about}</p>
                     <div className="card-actions justify-start mt-4 w-full">
                         <button onClick={() => navigate(`/project/${project?.id}`)} className="w-full hover:text-white border-2 py-2 text-neutral border-primary rounded">Show Details</button>
                     </div>

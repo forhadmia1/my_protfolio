@@ -5,6 +5,7 @@
         "name":"BD Computers LTD",
         "image":["https://i.ibb.co/n0GHKKz/Screenshot-4.jpg","https://i.ibb.co/T1qySNn/Screenshot-6.png",
             "https://i.ibb.co/tH7vWsX/Screenshot-7.png"],
+        "about":"This is a fully responsive manufacturer website.",
         "description":[
            "Fully authenticated by google authentication.",
             "Integrated payment method.",
@@ -23,6 +24,7 @@
         "id":2,
         "name":"Laptop Stockroom",
         "image":["https://i.ibb.co/Hqj1SLw/Screenshot-3.jpg","https://i.ibb.co/fvVXsD6/Screenshot-8.png","https://i.ibb.co/QMStVgB/Screenshot-9.png"],
+        "about":"This is a fully responsive warehouse management website.",
         "description":[
            "Authenticated by google authentication.",
             "User can add and update existing product quantities and delete them.",
@@ -40,6 +42,7 @@
         "id":3,
         "name":"Just Justice",
         "image":["https://i.ibb.co/gmYQBjq/Screenshot-5.jpg","https://i.ibb.co/0X2m92F/Screenshot-10.png","https://i.ibb.co/mT7xxR0/Screenshot-11.png"],
+        "about":"This is a fully responsive single service provider website.",
         "description":[
            "It is an individual service provider web app.",
             "This website is fully responsive for mobile and desktop.",
