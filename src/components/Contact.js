@@ -56,7 +56,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-left" className='lg:flex-grow bg-accent rounded shadow-2xl p-4'>
+                <div data-aos="fade-left" className='lg:flex-grow bg-accent rounded shadow-2xl p-4 lg:mt-0 md:mt-0 mt-5'>
                     <form ref={form} onSubmit={sendEmail} className=' w-full flex flex-col'>
                         <label className="label">
                             <span className="label-text text-secondary text-lg font-semibold">Name:</span>
