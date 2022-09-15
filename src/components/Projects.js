@@ -18,8 +18,8 @@ const Projects = () => {
                     }
                 </div>
             </div>
-            <div className='flex justify-center mt-6'>
-                <a href="#s" className='py-2 px-4 border-2 border-primary rounded'>MORE</a>
+            <div className='flex justify-center mt-6 cursor-pointer'>
+                <a target='_blank' rel="noreferrer" href="https://github.com/forhadmia1?tab=repositories" className='py-2 px-4 border-2 border-primary rounded'>MORE</a>
             </div>
         </section >
     );

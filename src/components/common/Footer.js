@@ -30,10 +30,10 @@ const Footer = () => {
             <div className='md:order-2'>
                 <div>
                     <ul className='flex gap-8 text-3xl text-secondary'>
-                        <li><AiFillGithub /></li>
-                        <li><ImLinkedin2 /></li>
-                        <li><AiOutlineTwitter /></li>
-                        <li><BsFacebook /></li>
+                        <li><a target='_blank' rel="noreferrer" href="https://github.com/forhadmia1"><AiFillGithub /></a></li>
+                        <li><a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/md-forhad-mia/"><ImLinkedin2 /></a></li>
+                        <li><a target='_blank' rel="noreferrer" href="https://twitter.com/dev_forhad"><AiOutlineTwitter /></a></li>
+                        <li><a target='_blank' rel="noreferrer" href="https://www.facebook.com/Dr.ForhadHasan"><BsFacebook /></a></li>
                     </ul>
                 </div>
                 <div>

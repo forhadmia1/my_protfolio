@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 import { AiFillGithub, AiOutlineTwitter } from 'react-icons/ai'
 import { ImLinkedin2 } from 'react-icons/im'
 import { BsFacebook } from 'react-icons/bs'
@@ -31,7 +30,7 @@ const HeroArea = () => {
                     <li><span className='text-primary mr-2 md:inline-block hidden'>|</span>MERN Stack Developer</li>
                 </ul>
                 <div className='flex md:justify-start justify-center gap-3 md:gap-5 mt-10'>
-                    <a href='https://drive.google.com/uc?export=download&id=15ka36LpmP1yD4NX7_7Iw7iydKCtjP3fa' className="p-3 text-secondary rounded bg-primary">Download Resume</a>
+                    <a href='https://drive.google.com/uc?export=download&id=1kpp1hjuDqpay1NWYpmAikoSdOwRLiD0C' className="p-3 text-secondary rounded bg-primary">Download Resume</a>
 
                     <button onClick={handleScroll} className="p-3 border-2 border-primary rounded text-secondary">About Me</button>
                 </div>
@@ -41,10 +40,10 @@ const HeroArea = () => {
                     <SectionTitle width='150'>Follow Me</SectionTitle>
                 </div>
                 <ul className='flex gap-8 md:flex-col text-3xl md:mr-28 text-secondary'>
-                    <li><AiFillGithub /></li>
-                    <li><ImLinkedin2 /></li>
-                    <li><AiOutlineTwitter /></li>
-                    <li><BsFacebook /></li>
+                    <li><a target='_blank' rel="noreferrer" href="https://github.com/forhadmia1"><AiFillGithub /></a></li>
+                    <li><a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/md-forhad-mia/"><ImLinkedin2 /></a></li>
+                    <li><a target='_blank' rel="noreferrer" href="https://twitter.com/dev_forhad"><AiOutlineTwitter /></a></li>
+                    <li><a target='_blank' rel="noreferrer" href="https://www.facebook.com/Dr.ForhadHasan"><BsFacebook /></a></li>
                 </ul>
             </div>
         </section >

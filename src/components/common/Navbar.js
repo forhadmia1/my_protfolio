@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../../App.css'
 
 const Navbar = () => {
     const [hide, setHide] = useState(false)
@@ -48,7 +47,7 @@ const Navbar = () => {
         }
     }
     return (
-        <nav className={`md:px-12 bg-base-100 fixed w-full py-2 z-50 ${hide ? 'lg:-translate-y-20' : 'lg:translate-y-0'} ${color && 'lg:bg-accent'}`}>
+        <nav className={`md:px-12 bg-base-100 duration-500 fixed w-full py-2 z-50 ${hide ? 'lg:-translate-y-20' : 'lg:translate-y-0'} ${color && 'lg:bg-accent'}`}>
             <div className="navbar p-0">
                 <div className="navbar-start">
                     <Link onClick={goTop} to='/' className="md:pl-0 text-primary font-bold  normal-case text-4xl">

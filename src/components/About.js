@@ -30,7 +30,7 @@ const About = () => {
                         I finished web development course from complete web development course with Jhankar Mahbub. I am curious to explore new technologies. I believe that I grow in my career in this field because I am a hardworking and self-learning person.
                     </p>
                     <div className='flex md:justify-start justify-center gap-3 md:gap-5 mt-10'>
-                        <a href='https://drive.google.com/uc?export=download&id=15ka36LpmP1yD4NX7_7Iw7iydKCtjP3fa' className="p-3 text-secondary rounded bg-primary">Download Resume</a>
+                        <a href='https://drive.google.com/uc?export=download&id=1kpp1hjuDqpay1NWYpmAikoSdOwRLiD0C' className="p-3 text-secondary rounded bg-primary">Download Resume</a>
 
                         <button onClick={handleScroll} className="p-3 border-2 border-primary rounded text-secondary">My Skills</button>
                     </div>
