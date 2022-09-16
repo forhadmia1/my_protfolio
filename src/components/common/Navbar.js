@@ -1,10 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { MdClose } from 'react-icons/md';
 
 const Navbar = () => {
     const [hide, setHide] = useState(false)
     const [color, setColor] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
 
     if (typeof window !== `undefined`) {
         let prevScrollPosition = window.pageYOffset
@@ -47,7 +49,7 @@ const Navbar = () => {
         }
     }
     return (
-        <nav className={`md:px-12 bg-base-100 duration-500 fixed w-full py-2 z-50 ${hide ? 'lg:-translate-y-20' : 'lg:translate-y-0'} ${color && 'lg:bg-accent'}`}>
+        <nav className={`md:px-12 z-50 bg-base-100 duration-500 fixed w-full py-2 ${hide ? 'lg:-translate-y-20' : 'lg:translate-y-0'} ${color && 'lg:bg-accent'}`}>
             <div className="navbar p-0">
                 <div className="navbar-start">
                     <Link onClick={goTop} to='/' className="md:pl-0 text-primary font-bold  normal-case text-4xl">
@@ -58,33 +60,35 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className='w-full justify-end'>
-                    <div className="dropdown">
-                        <div className='w-10 h-10 bg-primary flex justify-center items-center rounded lg:hidden m-3'>
-                            <label tabIndex="0" className=" text-accent">
+                    <div>
+                        <div onClick={() => setIsOpen(!isOpen)} className='w-10 h-10 bg-primary flex justify-center items-center rounded lg:hidden m-3 relative'>
+                            {isOpen ? <MdClose className='text-2xl font-bold text-black' /> : <label tabIndex="0" className=" text-accent">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                            </label>
+                            </label>}
                         </div>
-                        <ul tabIndex="0" className="dropdown-content mt-1 py-4 shadow bg-accent text-secondary rounded w-48 right-2 px-6 flex gap-3 flex-col">
-                            <li className='items-end'><a onClick={handleScroll} href="#about_me">
-                                ABOUT
-                            </a></li>
-                            <li className='items-end'><a onClick={handleScroll} href="#my_skills">
-                                SKILLS
-                            </a></li>
-                            <li className='items-end'><a onClick={handleScroll} href="#services">
-                                SERVICE
-                            </a></li>
-                            <li className='items-end'><a onClick={handleScroll} href="#portfolio">
-                                PORTFOLIO
-                            </a></li>
-                            <li className='items-end'><a onClick={handleScroll} href="#contact">
-                                CONTACT
-                            </a></li>
-                            <li className='items-end'><Link to='/blogs'>BLOG</Link></li>
-                            <li className='mt-2'>
-                                <a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/1kpp1hjuDqpay1NWYpmAikoSdOwRLiD0C/view?usp=sharing' className="btn-outline-primary  border-primary p-1 border-2 px-6 font-semibold text-secondary rounded" download>Resume</a>
-                            </li>
-                        </ul>
+                        <div className={`absolute duration-300 ${!isOpen ? '-right-full' : ' md:right-14 right-3'}`}>
+                            <ul tabIndex="0" className="mt-1 py-4 shadow bg-accent text-secondary rounded md:w-60 w-48 right-2 px-6 flex gap-3 flex-col">
+                                <li className='items-end'><a onClick={handleScroll} href="#about_me">
+                                    ABOUT
+                                </a></li>
+                                <li className='items-end'><a onClick={handleScroll} href="#my_skills">
+                                    SKILLS
+                                </a></li>
+                                <li className='items-end'><a onClick={handleScroll} href="#services">
+                                    SERVICE
+                                </a></li>
+                                <li className='items-end'><a onClick={handleScroll} href="#portfolio">
+                                    PORTFOLIO
+                                </a></li>
+                                <li className='items-end'><a onClick={handleScroll} href="#contact">
+                                    CONTACT
+                                </a></li>
+                                <li className='items-end'><Link to='/blogs'>BLOG</Link></li>
+                                <li className='mt-2'>
+                                    <a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/1kpp1hjuDqpay1NWYpmAikoSdOwRLiD0C/view?usp=sharing' className="btn-outline-primary  border-primary p-1 border-2 px-6 font-semibold text-secondary rounded" download>Resume</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div className="navbar-end hidden lg:flex">
@@ -123,7 +127,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav >
     );
 };
 
