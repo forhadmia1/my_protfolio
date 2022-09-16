@@ -39,7 +39,7 @@ const HeroArea = () => {
                 <div className='md:hidden'>
                     <SectionTitle width='150'>Follow Me</SectionTitle>
                 </div>
-                <ul className='flex gap-8 md:flex-col text-3xl md:mr-28 text-secondary -mt-14'>
+                <ul className='flex gap-8 md:flex-col text-3xl md:mr-28 text-secondary -mt-14 md:mt-0'>
                     <li><a target='_blank' rel="noreferrer" href="https://github.com/forhadmia1"><AiFillGithub /></a></li>
                     <li><a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/md-forhad-mia/"><ImLinkedin2 /></a></li>
                     <li><a target='_blank' rel="noreferrer" href="https://twitter.com/dev_forhad"><AiOutlineTwitter /></a></li>
