@@ -35,9 +35,9 @@ const Contact = () => {
             });
     };
     return (
-        <section id='contact' className='my-10 overflow-hidden pb-10'>
+        <section id='contact' className='overflow-hidden pb-10'>
             <SectionTitle width={200}>CONTACT ME</SectionTitle>
-            <div className='md:grid md:grid-cols-2 mt-10 gap-10 p-4 lg:flex lg:flex-row flex-col md:px-12'>
+            <div className='md:grid md:grid-cols-2 gap-10 p-4 lg:flex lg:flex-row flex-col md:px-12'>
                 <div data-aos="fade-right" className='h-full flex justify-center'>
                     <div className="card rounded h-full lg:w-96 md:w-96 w-full bg-accent shadow-2xl">
                         <div className='p-4'>

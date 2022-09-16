@@ -19,7 +19,7 @@ const HeroArea = () => {
     }
 
     return (
-        <section id='hero_section' className='md:px-12 sm:w-full lg:h-screen md:py-48 flex items-center flex-col md:flex-row-reverse lg:pt-40 pt-32'>
+        <section id='hero_section' className='md:px-12 sm:w-full lg:h-screen  flex justify-center items-center flex-col md:flex-row-reverse pt-32'>
             <div className='md:text-left text-center w-full'>
                 <p className='text-2xl mb-2 text-primary'>Hello, I am</p>
                 <h2 className='text-5xl ml-[-2px] md:text-7xl font-bold mb-4 text-secondary'>Forhad Mia</h2>
@@ -39,7 +39,7 @@ const HeroArea = () => {
                 <div className='md:hidden'>
                     <SectionTitle width='150'>Follow Me</SectionTitle>
                 </div>
-                <ul className='flex gap-8 md:flex-col text-3xl md:mr-28 text-secondary'>
+                <ul className='flex gap-8 md:flex-col text-3xl md:mr-28 text-secondary -mt-14'>
                     <li><a target='_blank' rel="noreferrer" href="https://github.com/forhadmia1"><AiFillGithub /></a></li>
                     <li><a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/md-forhad-mia/"><ImLinkedin2 /></a></li>
                     <li><a target='_blank' rel="noreferrer" href="https://twitter.com/dev_forhad"><AiOutlineTwitter /></a></li>

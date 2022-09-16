@@ -7,7 +7,7 @@ const Skills = () => {
     return (
         <section id='my_skills'>
             <SectionTitle width={140}>MY SKILLS</SectionTitle>
-            <div className='grid grid-cols-1 lg:grid-cols-2 mt-10 gap-10 mb-10 px-6 md:px-12'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 px-6 md:px-12'>
                 <div className=' shadow-xl p-6 rounded-lg text-neutral'>
                     <h2 className='text-4xl font-bold text-primary mb-2 uppercase'>Education</h2>
                     <hr />

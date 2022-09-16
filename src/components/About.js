@@ -18,7 +18,7 @@ const About = () => {
     return (
         <section id='about_me' className='mt-20 md:mt-0'>
             <SectionTitle width={150}>ABOUT ME</SectionTitle>
-            <div className='grid md:grid-cols-2 my-10 md:my-20'>
+            <div className='grid md:grid-cols-2'>
                 <div className='flex justify-center items-center'>
                     <img className='w-80 h-80 rounded-lg grayscale hover:grayscale-0 duration-1000 hover:scale-110' src={myphoto} alt="" />
                 </div>
