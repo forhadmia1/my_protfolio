@@ -1,7 +1,27 @@
 
 [
+    
     {
         "id":1,
+        "name":"Food Hub",
+        "image":["https://i.ibb.co/WWKZWPJ/screencapture-food-hub-db7a6-web-app-2022-10-23-17-23-35.png","https://i.ibb.co/xM5rYY5/screencapture-food-hub-db7a6-web-app-about-2022-10-23-17-25-36.png",
+            "https://i.ibb.co/ccVbNXr/screencapture-food-hub-db7a6-web-app-contact-2022-10-23-17-24-41.png"],
+        "about":"This is a fully responsive food delivery website.",
+        "description":[
+           "Authenticated by google authentication.",
+            "Integrated payment method.",
+            "User can make an order.",
+            "An admin can manage all order.",
+            "The website is fully responsive.",
+            "There is a dashboard that gives access to admin."
+        ],
+        "technology":"React.js, React Router, Redux, Tailwind CSS, Daisy UI, Rest API, Firebase, Stripe, Express.js, Jwt, Mongo DB, Vercel, React icons.",
+        "live_link":"https://food-hub-db7a6.web.app/",
+        "client_code":"https://github.com/forhadmia1/food_hub_client",
+        "server_code":"https://github.com/forhadmia1/food_hub_server"
+    },
+    {
+        "id":2,
         "name":"BD Computers LTD",
         "image":["https://i.ibb.co/n0GHKKz/Screenshot-4.jpg","https://i.ibb.co/T1qySNn/Screenshot-6.png",
             "https://i.ibb.co/tH7vWsX/Screenshot-7.png"],
@@ -9,7 +29,7 @@
         "description":[
            "Fully authenticated by google authentication.",
             "Integrated payment method.",
-            "Use can make an order and also delete the order.",
+            "User can make an order and also delete the order.",
             "An admin can manage all order, and also delete order that is not paid.",
             "The website is fully responsive for mobile and desktop.",
             "There is a dashboard that gives access to different routes between user and admin."
@@ -21,7 +41,7 @@
     },
 
     {
-        "id":2,
+        "id":3,
         "name":"Laptop Stockroom",
         "image":["https://i.ibb.co/Hqj1SLw/Screenshot-3.jpg","https://i.ibb.co/fvVXsD6/Screenshot-8.png","https://i.ibb.co/QMStVgB/Screenshot-9.png"],
         "about":"This is a fully responsive warehouse management website.",
@@ -36,23 +56,6 @@
         "live_link":"https://laptop-stockroom.web.app/",
         "client_code":"https://github.com/forhadmia1/Laptop_stockroom_client_Side",
         "server_code":"https://github.com/forhadmia1/Laptop_stockroom_server_side"
-    },
-
-    {
-        "id":3,
-        "name":"Just Justice",
-        "image":["https://i.ibb.co/gmYQBjq/Screenshot-5.jpg","https://i.ibb.co/0X2m92F/Screenshot-10.png","https://i.ibb.co/mT7xxR0/Screenshot-11.png"],
-        "about":"This is a fully responsive single service provider website.",
-        "description":[
-           "It is an individual service provider web app.",
-            "This website is fully responsive for mobile and desktop.",
-            "User can book a service.",
-            "Authenticated by firebase authentication."
-        ],
-        "technology":"React.js, React Router, React Bootstrap, Firebase, React Toastify, Fontawesome.",
-        "live_link":"https://just-justice.web.app/",
-        "client_code":"https://github.com/forhadmia1/just-justice",
-        "server_code":""
     }
 
 ]
