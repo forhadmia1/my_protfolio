@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 
 
 import { Pagination, Navigation } from "swiper";
+import { BeatLoader } from 'react-spinners';
 
 
 const SingleProject = () => {
@@ -26,7 +27,7 @@ const SingleProject = () => {
         }
     }, [id, projects])
     if (loading || projectLoading) {
-        return <p>Loading......</p>
+        return <div className='w-full h-screen flex justify-center items-center'><BeatLoader color="#36d7b7" /></div>
     }
 
     return (

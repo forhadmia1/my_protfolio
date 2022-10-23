@@ -20,7 +20,7 @@ const About = () => {
             <SectionTitle width={150}>ABOUT ME</SectionTitle>
             <div className='grid md:grid-cols-2'>
                 <div className='flex justify-center items-center'>
-                    <img className='w-80 h-80 rounded-lg grayscale hover:grayscale-0 duration-1000 hover:scale-110' src={myphoto} alt="" />
+                    <img className='w-80 h-80 rounded-lg grayscale hover:grayscale-0 duration-1000 hover:scale-105' src={myphoto} alt="" />
                 </div>
                 <div className='px-6 md:px-12 my-10'>
                     <p className='text-lg text-neutral text-justify'>

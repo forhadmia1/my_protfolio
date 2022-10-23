@@ -36,6 +36,7 @@ const Skills = () => {
                             <li>Rest API</li>
                             <li>Html 5</li>
                             <li>CSS 3</li>
+                            <li>Tailwind CSS</li>
                         </ul>
                     </div>
                     <div className='mt-4'>
@@ -46,7 +47,7 @@ const Skills = () => {
                             <li>Mongo Db</li>
                             <li>Firebase</li>
                             <li>Daisy UI</li>
-                            <li>Tailwind CSS</li>
+                            <li>Redux</li>
                         </ul>
                     </div>
                     <div className='mt-4'>
@@ -54,6 +55,7 @@ const Skills = () => {
                         <ul className='flex list-disc gap-4 list-inside flex-wrap font-semibold'>
                             <li>Next.js</li>
                             <li>TypeScript</li>
+                            <li>Sass</li>
                         </ul>
                     </div>
                     <div className='mt-4'>
