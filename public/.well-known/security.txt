@@ -1,0 +1,29 @@
+# Security Policy
+
+## Reporting Security Vulnerabilities
+
+If you discover a security vulnerability in this portfolio website, please report it by emailing:
+
+**Email:** forhadmia416@gmail.com
+
+Please do not create a public GitHub issue for security vulnerabilities.
+
+## Security Measures
+
+This website implements the following security measures:
+
+- HTTPS enforcement
+- Content Security Policy (CSP)
+- XSS protection
+- CSRF protection
+- Secure headers
+
+## Supported Versions
+
+| Version | Supported          |
+| ------- | ------------------ |
+| Latest  | :white_check_mark: |
+
+## Security Updates
+
+Security updates are applied regularly. Last updated: 2026-04-02
